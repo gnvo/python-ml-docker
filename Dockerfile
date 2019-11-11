@@ -1,7 +1,10 @@
 FROM python:3-alpine
 
+ENV PYTHONUNBUFFERED=1
+
 RUN apk add --no-cache \
         libffi-dev \
+        openblas-dev \
         build-base && \
     pip install --no-cache-dir numpy && \
     pip install --no-cache-dir pandas && \
