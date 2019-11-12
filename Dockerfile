@@ -7,6 +7,7 @@ RUN apk add --no-cache \
         openblas-dev \
         cython \
         build-base && \
+    pip install --no-cache-dir cython && \
     pip install --no-cache-dir numpy && \
     pip install --no-cache-dir pandas && \
     pip install --no-cache-dir scipy && \
