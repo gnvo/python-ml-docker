@@ -5,6 +5,7 @@ ENV PYTHONUNBUFFERED=1
 RUN apk add --no-cache \
         libffi-dev \
         openblas-dev \
+        cython \
         build-base && \
     pip install --no-cache-dir numpy && \
     pip install --no-cache-dir pandas && \
