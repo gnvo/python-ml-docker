@@ -2,10 +2,13 @@ FROM python:3-alpine
 
 ENV PYTHONUNBUFFERED=1
 
-RUN apk add --no-cache \
+RUN apk update && \
+    apk add --no-cache \
         libffi-dev \
         openblas-dev \
         cython \
+        freetype-dev \
+      	llvm8-dev \
         build-base && \
     pip install --no-cache-dir cython && \
     pip install --no-cache-dir numpy && \
