@@ -17,6 +17,4 @@ RUN apk update && \
     pip install --no-cache-dir scikit-learn && \
     pip install --no-cache-dir matplotlib && \
     pip install --no-cache-dir pyod && \
-    pip install --no-cache-dir pytorch && \
-    pip install --no-cache-dir tensorflow && \
     pip install --no-cache-dir elasticsearch
