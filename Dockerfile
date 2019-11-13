@@ -9,6 +9,8 @@ RUN apk update && \
         cython \
         freetype-dev \
       	llvm8-dev \
+        nano \
+        tmux \
         build-base && \
     pip install --no-cache-dir cython && \
     pip install --no-cache-dir numpy && \
